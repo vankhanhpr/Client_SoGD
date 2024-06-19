@@ -1,0 +1,29 @@
+@base = http://localhost:58789
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+
+#IT00752
+@usr1 = admin
+@pwd1 = 123456
+### Login
+
+POST {{base}}/api/auth/login HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+	"username": "admin",
+	"password": "123456"
+}
+
+### Get token
+## lay secretCode ở Login
+## otp fix 159874 cho dev
+
+@BearerToken = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImp0aSI6ImJmZTlhMWRkLWI0ZmUtNDkzMS1hNmFhLTU4MjRlYTMwNGQyZCIsImlhdCI6IjE5LzA1LzIwMjIgMTo1MDo1NSBBTSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjEiLCJuYmYiOjE2NTI5MjUwNTUsImV4cCI6MTY1MzAxMTQ1NSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTEiLCJhdWQiOiJLaGFuaE5ndXllbklUIn0.s2BVPj3YlhPPJrpDRJmdbAIvIYfRI5NBgGEELEw_KfA
+
+###  lay dang pos
+GET {{base}}/api/newspublic/posts/getPostsToTypeForCustomer HTTP/1.1
+Content-Type: {{contentType}}
+Mac-address: WEB
+# Authorization: {{BearerToken}}
+

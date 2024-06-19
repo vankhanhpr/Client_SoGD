@@ -1,0 +1,30 @@
+#slider{
+    position: relative;
+    overflow: hidden;
+}
+#slider .arrowLeft,#slider .arrowRight{
+    position: absolute;
+    top: 50%;
+    border: 20px solid transparent;
+}
+#slider .arrowLeft{
+    border-right-color: green;    
+    z-index: 1;
+}
+#slider .arrowRight{
+    right:0;
+    border-left-color: green;
+}
+#slider .squares{
+    position: absolute;
+    bottom: 0;
+    left: calc( 50% - 75px);
+}
+#slider .squares div{
+    height:20px;
+    width:20px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color:yellow;
+    border-radius:50%;
+}

@@ -1,0 +1,49 @@
+
+.padr0{
+    padding: 0;
+}
+.padt10{
+    font-size: 18px;
+}
+.tab-item{
+    padding: 10px;
+}
+.nav-product ul {
+    padding: 0;
+    margin: 0;
+}
+.nav-product ul li {
+    list-style-type: none;
+}
+.nav-product ul li a {
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    color: #999999;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-product ul li a {
+    background-color: #f2f2f2;
+    color: #0071bb;
+}
+.nav-product ul li a:hover{
+    background-color: #f2f2f2;
+}
+.nav-product ul li a span{
+    font-family: var(--font-family);
+    font-size: var(--font-size-title);
+}
+.nav-product ul li a i {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    margin-top: -8px;
+}
+.box-form{
+    border: none;
+    
+}
+.bleft{
+    border-left: 1px solid #ccc !important;
+}

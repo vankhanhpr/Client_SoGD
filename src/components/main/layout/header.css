@@ -1,0 +1,135 @@
+.dropdown_profile {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+  background-color: transparent;
+  line-height: 45px;
+}
+.dropdown_profile li {
+  position: relative;
+  right: 0;
+}
+
+.dropdown_profile li a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown_profile li ul {
+  position: absolute;
+  top: 100%;
+  right: 20%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  line-height: normal;
+  background-image: linear-gradient(to bottom, #e6e5f2, #4599cd);
+
+}
+
+.dropdown_profile li ul li a {
+  text-align: left;
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown_profile li ul li a:hover {
+  background-color: #0abf53;
+  color: #ffffff;
+}
+
+.dropdown_profile li ul li ul {
+  right: 100%;
+  top: 0;
+}
+
+.dropdown_profile ul li:hover>a {
+  background-color: #0abf53;
+  color: #ffffff !important;
+}
+
+ul li:hover>ul {
+  display: block;
+}
+.menus-right  {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  width: 225px;
+  /* padding: 5px 0px; */
+}
+.avatar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  margin-top: 18px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-image: url('../../../assets/img/defau_user.jpg');
+}
+.avatar.-x24 {
+  width: 24px;
+  height: 24px;
+}
+.avatar.-x48 {
+  width: 48px;
+  height: 48px;
+}
+.avatar.-x64 {
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 920px){
+    .dropdown_profile .username{
+        display: none;
+    }
+    .txtmobile{
+      font-size: 10px;
+      
+    }
+    .txt-us{
+      font-size: 10px;
+    }
+    .menus-right  {
+      width: 50px !important;
+      /* padding: 5px 0px; */
+    }
+    .dropdown_profile li ul{
+      margin-top: 43px !important;
+    }
+}
+
+@media (max-width: 768px){
+  .header .logo .txtmobile,
+  .txtmobile{
+    font-size: 10px;
+    
+  }
+  .txt-us{
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px){
+  .header .logo .txtmobile,
+  .txtmobile{
+    display: none;
+    
+  }
+  .txt-us{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+install
+-- npm install --save bootstrap-vue
+-- npm install --save jquery
+-- npm i -s vue-owl-carousel
+-- npm install --save apexcharts
+-- npm install vuex axios
+-- npm install --save vuex-persistedstate (Để đối phó với việc đặt lại Vuex sau khi làm mới, chúng tôi sẽ làm việc với vuex-persistedstatemột thư viện lưu dữ liệu Vuex của chúng tôi giữa các lần tải lại trang.)
+-- npm install --save vue-axios
+-- npm install --save vue-toastification
+-- npm install moment
+buttom
+
+<KButtom type="primary" fontSize="16">
+    <template #icon>
+        <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+    </template>
+    Rest Form
+</KButtom>
+
+-- using box
+this.$box.confirm
+
+-- using moment
+this.$moment()
+
+-- using jquery
+this.$jquery
+

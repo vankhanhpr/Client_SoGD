@@ -1,0 +1,9 @@
+:root{
+    --main-color:#0176FF;
+    --font-family:"Merriweather",serif;
+    --font-size-title:20px;
+    --font-size-text:18px;
+    --font-size-description:14px;
+    --color-description:#666666;
+    --color-hover:#e0dd00;
+}
